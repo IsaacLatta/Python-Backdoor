@@ -6,7 +6,7 @@ This project is for educational purposes only. It is designed to understand and 
 
 ## Description
 
-Python-Backdoor is a reverse shell backdoor tool designed to demonstrate and practice concepts of network security and penetration testing. It allows for remote command execution, taking screenshots, uploading/downloading files, and executing some basic system commands. The backdoor ensures persistence through a `while True` loop, attempting to reconnect to the server every 20 seconds, ensuring that the connection can be re-established automatically without manual intervention unless an abort command is sent.
+Python-Backdoor is a reverse shell backdoor tool designed to demonstrate and practice concepts of network security and penetration testing. It allows for remote command execution, taking screenshots, uploading/downloading files, and executing some basic system commands. The backdoor ensures persistence through a `while True` loop, attempting to reconnect to the server every 20 seconds, ensuring that the connection can be re-established automatically without manual intervention unless the `abort` command is sent.
 
 ## Features
 
@@ -23,17 +23,17 @@ Python-Backdoor is a reverse shell backdoor tool designed to demonstrate and pra
 ## Installation
 
 1. Clone this repository to your local machine;  https://github.com/IsaacLatta/Python-Backdoor.git
-2. Run the scripts via "python3 server.py" and "python3 backdoor.py"
+2. Run the scripts via "python3 server.py" and "python3 backdoor.py".
 
 ## Usage
 
 ### Server Setup
 
-1. Configure the server_IP variable at the beginning of the server.py script to the IP address of the machine that will be listening for connections.
+1. Configure the `SERVER_IP` variable at the beginning of the server.py script to the IP address of the machine that will be listening for connections.
 
 ### Client Setup
 
-1. Configure the server_IP variable at the beginning of the backdoor.py script to the IP address of the machine that will be listening for connections.
+1. Configure the `SERVER_IP` variable at the beginning of the backdoor.py script to the IP address of the machine that will be listening for connections.
 2. Deploy the client script to the target system.
 3. The backdoor will attempt to connect to the server every 20 seconds, unless killed via trhe 'abort' command
 
