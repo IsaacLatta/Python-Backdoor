@@ -40,8 +40,8 @@ Python-Backdoor is a reverse shell backdoor tool designed to demonstrate and pra
 ### Commands
 
 - `screenshot`: Capture a screenshot of the target system.
-- `upload <filename>`: Upload a file to the target system.
-- `download <filename>`: Download a file from the target system.
+- `upload filename`: Upload a file to the target system.
+- `download filename`: Download a file from the target system.
 - `quit` : Exit the shell and close connection
 - `abort`: Terminate the connection and stop the backdoor.
 
